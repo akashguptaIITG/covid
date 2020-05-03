@@ -1,1 +1,22 @@
 <app-header></app-header>
+<div class="container">
+  <div class="card mb-3 latest-news" *ngFor="let latestNews of news">
+    <img
+      class="card-img-top"
+      height="200px"
+      width="100px"
+      [src]="latestNews.imageUrl"
+      alt="image"
+    />
+    <h5 class="card-header">{{ latestNews.title }}</h5>
+    <div class="card-body">
+      <h5 class="card-title">{{ latestNews.description }}</h5>
+      <p class="card-text">
+        {{ latestNews.summary }}
+      </p>
+      <p class="card-text">
+        <small class="text-muted"> {{ latestNews.details }} </small>
+      </p>
+    </div>
+  </div>
+</div>

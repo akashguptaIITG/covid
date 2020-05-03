@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" [routerLink]="['/dashboard']">Covid</a>
+  <a class="navbar-brand" [routerLink]="['/']">Covid</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -17,13 +17,18 @@
         <a class="nav-link" [routerLink]="['/dashboard']">Dashboard </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Precautions</a>
+        <a class="nav-link" [routerLink]="['/precautions']">Precautions</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Latest News</a>
+        <a class="nav-link" [routerLink]="['/latest-news']">Latest News</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" *ngIf="isLoggedIn">Add News</a>
+        <a
+          class="nav-link"
+          [routerLink]="['/admin/add-news']"
+          *ngIf="isLoggedIn"
+          >Add News</a
+        >
       </li>
     </ul>
     <div class="col-md-2 offset-6 justify-content-right">

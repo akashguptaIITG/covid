@@ -1,1 +1,11 @@
-<p>precaution works!</p>
+<app-header></app-header>
+<div class="container">
+  <h4 class="sp">
+    Below are some general precautionary measures regarding covid:
+  </h4>
+  <ul class="list-group" *ngFor="let precaution of precautions">
+    <li class="list-group-item">
+      {{ precaution.description }}
+    </li>
+  </ul>
+</div>

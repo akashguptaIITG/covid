@@ -1,1 +1,71 @@
 <app-header></app-header>
+<div class="container">
+  <h4>Add News</h4>
+  <form [formGroup]="newsForm" (ngSubmit)="save(newsForm.value)">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Title"
+        id="title"
+        formControlName="title"
+      />
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Description"
+        id="description"
+        formControlName="description"
+      />
+    </div>
+    <div class="form-group">
+      <label for="summary">Summary:</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Summary"
+        id="summary"
+        formControlName="summary"
+      />
+    </div>
+    <div class="form-group">
+      <label for="details">Details:</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Details"
+        id="details"
+        formControlName="details"
+      />
+    </div>
+    <div>
+      <label for="imageUrl">Image Url:</label>
+      <input
+        type="url"
+        class="form-control"
+        placeholder="Enter Image Url"
+        id="imageUrl"
+        formControlName="imageUrl"
+      />
+    </div>
+    <div class="row btns justify-content">
+      <button
+        class="btn btn-outline-primary col-md-1 offset-md-4"
+        [disabled]="!newsForm.valid"
+      >
+        Add
+      </button>
+      <button
+        class="btn btn-outline-secondary col-md-1 offset-md-1"
+        (click)="resetForm()"
+        [disabled]="!newsForm.valid"
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
