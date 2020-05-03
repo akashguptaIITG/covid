@@ -7,6 +7,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 username: admin
 password: admin
 
+# DeployedAt Link
+
+http://nagp-angular-covidv1.1-akashgupta01.surge.sh/
+
 # api's used for data:
 
 For fetching the details of the covid stats, use https://api.covid19india.org/data.json
