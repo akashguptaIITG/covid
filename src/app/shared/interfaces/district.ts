@@ -1,4 +1,6 @@
 export interface IDistrict {
+  state: string;
+  district: string;
   confirmed: number;
   deceased: number;
   recovered: number;

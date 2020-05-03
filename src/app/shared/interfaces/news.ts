@@ -3,5 +3,5 @@ export interface INews {
   description: string;
   summary: string;
   details: string;
-  image: string;
+  image?: string;
 }

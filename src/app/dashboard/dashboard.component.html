@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="container">
+  <div class="table-responsive">
+    <table class="table" *ngIf="stateWiseData && stateWiseData.length">
+      <thead>
+        <tr>
+          <th>State</th>
+          <th>Confirmed</th>
+          <th>Active</th>
+          <th>Recovered</th>
+          <th>Deceased</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let state of stateWiseData" class="dashboard-special">
+          <td [routerLink]="['/dashboard', state.state]">
+            {{ state.state }}
+          </td>
+          <td>{{ state.confirmed }}</td>
+          <td>{{ state.active }}</td>
+          <td>{{ state.recovered }}</td>
+          <td>{{ state.deaths }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

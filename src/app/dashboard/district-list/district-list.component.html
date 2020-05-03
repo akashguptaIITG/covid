@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="container">
+  <h3>{{ state }}</h3>
+  <div class="table-responsive">
+    <h5 *ngIf="!districtWiseData || !districtWiseData.length">No Data Found</h5>
+    <table class="table" *ngIf="districtWiseData && districtWiseData.length">
+      <thead>
+        <tr>
+          <th>District</th>
+          <th>Confirmed</th>
+          <th>Active</th>
+          <th>Recovered</th>
+          <th>Deceased</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let district of districtWiseData">
+          <td>{{ district.district }}</td>
+          <td>{{ district.confirmed }}</td>
+          <td>{{ district.active }}</td>
+          <td>{{ district.recovered }}</td>
+          <td>{{ district.deceased }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
