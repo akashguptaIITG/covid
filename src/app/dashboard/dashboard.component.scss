@@ -2,3 +2,11 @@
   cursor: pointer;
   background-color: lightblue;
 }
+
+.dashboard {
+  max-width: 1000px;
+  max-height: 520px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  margin: auto;
+}

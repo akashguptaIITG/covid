@@ -13,16 +13,16 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
+      <li class="nav-item" [routerLinkActive]="['active']">
         <a class="nav-link" [routerLink]="['/dashboard']">Dashboard </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [routerLinkActive]="['active']">
         <a class="nav-link" [routerLink]="['/precautions']">Precautions</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [routerLinkActive]="['active']">
         <a class="nav-link" [routerLink]="['/latest-news']">Latest News</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [routerLinkActive]="['active']">
         <a
           class="nav-link"
           [routerLink]="['/admin/add-news']"

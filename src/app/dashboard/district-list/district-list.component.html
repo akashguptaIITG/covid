@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div class="container">
   <h3>{{ state }}</h3>
-  <div class="table-responsive">
+  <div class="table-responsive dashboard table-striped">
     <h5 *ngIf="!districtWiseData || !districtWiseData.length">No Data Found</h5>
     <table class="table" *ngIf="districtWiseData && districtWiseData.length">
       <thead>
