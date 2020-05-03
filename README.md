@@ -16,6 +16,9 @@ http://nagp-angular-covidv1.2-akashgupta01.surge.sh/
 - For fetching the details of the covid stats: https://api.covid19india.org/data.json
 - For districts data: https://api.covid19india.org/state_district_wise.json
 
+# GITHUB LINK
+https://github.com/akashguptaIITG/covid
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
