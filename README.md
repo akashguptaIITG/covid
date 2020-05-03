@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
 
+# Admin Credentials
+
+username: admin
+password: admin
+
+# api's used for data:
+
+For fetching the details of the covid stats, use https://api.covid19india.org/data.json
+For districts data, use https://api.covid19india.org/state_district_wise.json
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
